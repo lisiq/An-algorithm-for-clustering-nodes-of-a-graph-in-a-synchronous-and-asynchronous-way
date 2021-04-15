@@ -1,7 +1,7 @@
 # An-algorithm-for-clustering-nodes-of-a-graph-in-a-synchronous-and-asynchronous-way
 
 I will partition the nodes of an input graph (either directed or undirected) into clusters (communities) with the
-help of the following algorithm. Let the neighbours of node $v$ be denoted by $`v_1 , v_2 , \ldots, v_k`$ , and let each node
+help of the following algorithm. Let the neighbours of node $v$ be denoted by ```math v_1 , v_2 , \ldots, v_k``` , and let each node
 also have a label $C_v$ that gives the community it belongs to. A node $v$ will determine its label based on the
 labels of its neighbours: it will update it to the value that the maximum number of its neighbours have. If
 there are multiple possible labels with the same maximum amount of neighbours, then the tie is broken in

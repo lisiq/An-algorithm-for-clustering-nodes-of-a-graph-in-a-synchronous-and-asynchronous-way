@@ -1,7 +1,7 @@
 # An-algorithm-for-clustering-nodes-of-a-graph-in-a-synchronous-and-asynchronous-way
 
 I will partition the nodes of an input graph (either directed or undirected) into clusters (communities) with the
-help of the following algorithm. Let the neighbours of node $v$ be denoted by $v_1 , v_2 , \ldots, v_k$ , and let each node
+help of the following algorithm. Let the neighbours of node $v$ be denoted by `$v_1 , v_2 , \ldots, v_k$` , and let each node
 also have a label $C_v$ that gives the community it belongs to. A node $v$ will determine its label based on the
 labels of its neighbours: it will update it to the value that the maximum number of its neighbours have. If
 there are multiple possible labels with the same maximum amount of neighbours, then the tie is broken in
@@ -18,7 +18,7 @@ follows: $$C_v(t) = f(C_{v1}(t), C_{v2}(t), \ldots, C_{vm}(t), C_{v(m+1)}(t-1), 
 The algorithm iterates until it can update any label. If no label updates happen in an iteration, the
 algorithm terminates, and the current labels give the clusters (communities) where each node belongs. The
 outline of the algorithm can be seen below:
-  1. Initialize labels: For all $v \in V$, let $C_v(0) = v
+  1. Initialize labels: For all $v \in V$, let $C_v(0) = v$
   2. Set $t=1$
   3. Determine random update order for $V$
   4. For each $v \in V$ in the update order of $3$., determine $C_v(t)$
